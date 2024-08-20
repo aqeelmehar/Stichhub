@@ -1,0 +1,75 @@
+.faq-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  background-color: #030218;
+  color: white;
+  height: 720px;
+}
+
+.faq-image {
+  width: 100%;
+  max-width: 300px;
+  margin-bottom: 20px;
+}
+
+.faq-image img {
+  width: 100%;
+  display: block;
+  filter: drop-shadow(0 0 5px #fff);
+}
+
+.faq-content {
+  width: 100%;
+  max-width: 600px;
+}
+
+.faq-content h2 {
+  text-align: center;
+  padding-bottom: 60px;
+  margin-bottom: 20px;
+  font-size: 2.5rem;
+  line-height: 1;
+  font-weight: bold;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  color: white;
+}
+
+.ant-collapse-header {
+  color: white !important;
+  font-weight: bold;
+  font-size: 1.1em;
+}
+
+.ant-collapse-content {
+  background-color: #1e1c31;
+  color: white;
+}
+
+.ant-collapse-item {
+  border: none;
+  margin-bottom: 10px;
+  transition: transform 0.2s ease-in-out;
+}
+
+.ant-collapse-item:hover {
+  transform: scale(1.02);
+}
+
+@media (min-width: 768px) {
+  .faq-container {
+    flex-direction: row;
+    justify-content: space-around;
+
+  }
+
+  .faq-image {
+    margin-bottom: 0;
+    margin-right: 20px;
+  }
+
+  .faq-content {
+    max-width: 60%;
+  }
+}

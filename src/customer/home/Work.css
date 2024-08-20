@@ -1,0 +1,103 @@
+/* How it works */
+.how-it-works-container {
+    text-align: center;
+    background-color: #030218;
+    padding: 50px 0;
+    color: white;
+    padding-bottom: 70px;
+    padding-top: 100px;
+    height: 600px;
+  }
+  
+  .how-it-works-title {
+    font-size: 2.5rem;
+    line-height: 1;
+    margin-bottom: 70px;
+    color: white;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  }
+  
+  .steps-row {
+    margin-bottom: 30px;
+  }
+  
+  .step-col {
+    margin-bottom: 20px;
+  }
+  
+  .step {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  
+  .step-circle {
+    background-color:#030218;
+    color: white;
+    width: 50px;
+    height: 50px;
+    border: 3px solid white;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+  }
+  .step-circle:hover{
+    color: #030218;
+    background-color: white;
+  }
+  
+  .step-icon {
+    width: 50px;
+    height: 50px;
+    margin-bottom: 10px;
+  }
+  
+  .step-text {
+    color: white;
+    font-size: 1rem;
+  }
+  
+  .or-text {
+    font-size: 1.5rem;
+    margin: 20px 0;
+  }
+  
+  .appointment-text {
+    font-size: 1.2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .calendar-icon {
+    width: 24px;
+    height: 24px;
+    margin-left: 10px;
+  }
+  @media (max-width: 767px) {
+    .step {
+      text-align: center;
+    }
+    .how-it-works-container{
+      height: 67rem;
+     
+    }
+    .step-circle {
+      font-size: 24px; /* Adjust as needed */
+    }
+    .step-icon {
+      width: 50px; /* Adjust as needed */
+      height: 50px; /* Adjust as needed */
+    }
+  }
+
+
+  
+  /* work for tylor */
+  
+  /* HowItWorks.css */
+ 

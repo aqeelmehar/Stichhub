@@ -1,0 +1,179 @@
+/* Navbar */
+.navbar-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #01010c;
+  /* Adjust to match the dark background */
+  padding: 10px 20px;
+  color: white;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  /* Add slight shadow */
+  position: sticky;
+  /* Make navbar sticky */
+  top: 0;
+  /* Stick to the top of the page */
+  z-index: 1000;
+  /* Ensure it stays above other content */
+}
+
+.logo img {
+  height: 50px;
+  /* Adjust height as needed */
+}
+
+.ant-menu-horizontal {
+  border-bottom: none;
+  background-color: transparent;
+  display: flex;
+  flex: 1;
+  justify-content: center;
+}
+
+.ant-menu-item {
+
+  font-weight: bold;
+  font-size: large !important;
+  color: white !important;
+  margin: 0 10px;
+}
+
+.ant-menu-item-selected {
+  border-bottom: 2px solid #00A3E0;
+  /* Color for selected item underline */
+}
+
+.get-measured-button {
+  background-color:white;
+  color: #030218;
+  font-weight: bold;
+  border: 3px solid white;
+  height: 45px !important;
+  border-radius: 25px;
+  
+}
+
+.get-started-button{
+  margin-right: 20px;
+  background-color:white;
+  color: #030218;
+  font-weight: bold;
+  border: 3px solid white;
+  height: 45px !important;
+  border-radius: 25px;
+}
+.get-measured-button:hover {
+  background-color:  #030218 !important;
+  /* Dark background color on hover */
+  color:white !important;
+  /* Text color on hover */
+  border: 3px solid white;
+  /* Border color on hover */
+}
+.get-started-button:hover{
+  background-color: #030218 !important;
+  /* Dark background color on hover */
+  color:white !important;
+  /* Text color on hover */
+  border: 3px solid white;
+  /* Border color on hover */
+}
+.drawer-menu {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+ 
+  
+}
+.ant-drawer-content{
+  background-color:#0f0e1c !important;
+  color: white;
+}
+.menu-section {
+  margin: 20px;
+  color: white !important;
+}
+
+.menu-section h3 {
+  
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.menu-section ul {
+  list-style-type: none;
+  padding: 0;
+ 
+}
+
+.menu-section li {
+  margin-bottom: 8px;
+  color: white !important;
+}
+
+.menu-section li a {
+  color: white !important;
+  text-decoration: none;
+  font-size: 16px;
+}
+
+.menu-section li a:hover {
+  color: #00A3E0;
+}
+/* modal */
+.video-container {
+  margin-bottom: 16px;
+}
+
+.video-container video {
+  border-radius: 8px;
+}
+
+.form-container {
+  margin-top: 16px;
+}
+
+
+/* Responsive styles */
+@media (max-width: 768px) {
+  .navbar-container {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 10px;
+
+  }
+
+  .logo img {
+    height: 30px;
+    /* Adjust height for smaller screens */
+  }
+
+  .ant-menu-horizontal {
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%;
+
+  }
+
+  .ant-menu-item {
+    margin: 5px 0;
+    width: 100%;
+    text-align: left;
+    color: black !important;
+    font-size: normal;
+  }
+
+  .get-started-button,.get-measured-button {
+    width: 100%;
+    margin-top: 10px;
+  }
+
+  .drawer-menu {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .menu-section {
+    margin: 10px 0;
+  }
+}

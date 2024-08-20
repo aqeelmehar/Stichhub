@@ -1,0 +1,104 @@
+
+.App {
+    width: auto;
+    background-color: #030218;
+    color: white;
+    overflow: hidden;
+  }
+  
+  .section-header {
+    text-align: center;
+    margin-bottom: 70px;
+
+  }
+  
+  .section-header h5 {
+    font-size: 0.9rem;
+    color: #999;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-bottom: 10px;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  }
+  
+  .section-header h1 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    line-height: 1;
+    color:white;
+    margin: 0;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  }
+  
+  .works-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+  }
+  
+  .works-card {
+    background: rgb(2,0,36);
+    background: radial-gradient(circle, #ffffff 0%, #ffffff 35%, rgb(35 73 80) 100%);
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    width: 30%;
+    min-width: 280px;
+    max-width: 350px;
+    margin: 10px;
+    padding: 20px;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .works-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  }
+  
+  .works-icon {
+    font-size: 3rem;
+    margin-bottom: 20px;
+    transition: transform 0.3s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 80px;
+    width: 80px;
+    border-radius: 50%;
+    background-color: #f5f5f5;
+  }
+  
+  .works-icon:hover {
+    transform: scale(1.1);
+  }
+  
+  .works-card h3 {
+    font-size: 1.5rem;
+    color: #333;
+    margin-bottom: 15px;
+  }
+  
+  .works-card p {
+    font-size: 0.95rem;
+    color:black;
+    line-height: 1.5;
+  }
+  
+  @media (max-width: 768px) {
+    .works-container {
+      flex-direction: column;
+      align-items: center;
+   
+    }
+  .App{
+    padding-top: 6rem;
+  }
+    .works-card {
+      width: 80%;
+      margin-bottom: 20px;
+    }
+  }
+  

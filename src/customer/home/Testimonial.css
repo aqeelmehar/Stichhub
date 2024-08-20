@@ -1,0 +1,118 @@
+/* Testimonials.css */
+
+.testimonials-container {
+  background-color: #030218;
+  text-align: center;
+  color: white;
+  padding: 2rem 0;
+  /* Added padding for better spacing */
+}
+
+.title {
+  font-size: 2.5rem;
+  line-height: 1;
+  margin-bottom: 80px;
+}
+
+.testimonial-card {
+  transition: transform 0.3s ease, background-color 0.3s ease;
+  background-color: #240046;
+  border-radius: 10px;
+  padding: 20px;
+  text-align: center;
+  width: 1000px;
+  height: 450px;
+  margin: 0 auto;
+  /* Centers the card */
+}
+
+.testimonial-card:hover {
+  transform: translateY(-10px);
+  background-color: #3c096c;
+}
+
+.testimonial-avatar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 15px;
+  /* Aligns the avatar and centers it */
+}
+
+.testimonial-avatar img {
+  width: 220px;
+  height: 220px;
+  border-radius: 50%;
+  margin-bottom: 15px;
+}
+
+.testimonial-name {
+  font-size: 2rem;
+  font-weight: bolder;
+  color: white;
+}
+
+.testimonial-role {
+  font-size: 1.55rem;
+  color: #ff0054;
+  margin-bottom: 15px;
+}
+
+.testimonial-text {
+  font-size: 1.25rem;
+  color: white;
+}
+
+/* Media Queries for responsiveness */
+@media (max-width: 768px) {
+  .title {
+    font-size: 1.5rem;
+  }
+
+  .testimonials-container {
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+    /* Added padding-bottom for consistency */
+  }
+
+  .testimonial-card {
+    padding: 15px;
+    width: 90%;
+    /* Makes the card fit the screen width on smaller devices */
+    height: auto;
+    /* Adjusts height to fit content */
+    margin: 0 auto;
+    /* Centers the card on smaller screens */
+  }
+
+  .testimonial-avatar {
+    margin-bottom: 15px;
+    /* Ensures spacing is consistent */
+  }
+
+  .testimonial-avatar img {
+    width: 120px;
+    /* Increased size for better visibility */
+    height: 120px;
+    /* Matches width */
+    margin: 0 auto;
+    /* Centers the image */
+  }
+
+  .testimonial-name {
+    font-size: 1.5rem;
+    /* Adjusted font size for better readability */
+  }
+
+  .testimonial-role {
+    font-size: 1.2rem;
+    /* Adjusted font size */
+  }
+
+  .testimonial-text {
+    font-size: 1rem;
+    /* Adjusted font size for readability */
+    text-align: center;
+    /* Centers the text */
+  }
+}
